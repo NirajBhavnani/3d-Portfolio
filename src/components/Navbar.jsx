@@ -19,7 +19,7 @@ items-center max-w-7x1 mx-auto"
         <Link
           to="/"
           className="flex items-center gap-3"
-          onclick={() => {
+          onClick={() => {
             setActive("");
             window.scrollTo(0, 0); //scroll to the top of the page
           }}
