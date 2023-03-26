@@ -4,17 +4,16 @@ import {
   creator,
   web,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
+  vuejs,
+  csharp,
+  flutter,
+  python,
+  java,
+  sql,
   git,
-  figma,
-  docker,
   kjsce,
   book,
   hope,
@@ -61,6 +60,38 @@ const services = [
 
 const technologies = [
   {
+    name: "JavaScript",
+    icon: javascript,
+  },
+  {
+    name: "React JS",
+    icon: reactjs,
+  },
+  {
+    name: "Vue JS",
+    icon: vuejs,
+  },
+  {
+    name: "C#",
+    icon: csharp,
+  },
+  {
+    name: "Flutter",
+    icon: flutter,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "Java",
+    icon: java,
+  },
+  {
+    name: "SQL",
+    icon: sql,
+  },
+  {
     name: "HTML 5",
     icon: html,
   },
@@ -69,48 +100,12 @@ const technologies = [
     icon: css,
   },
   {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
+    name: "Three JS",
+    icon: threejs,
   },
 ];
 
