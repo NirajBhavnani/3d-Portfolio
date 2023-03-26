@@ -63,6 +63,7 @@ const ComputersCanvas = () => {
       shadows
       camera={{ position: [16, 4, 5], fov: 30 }}
       gl={{ preserveDrawingBuffer: true }}
+      className="cursor-ew-resize"
     >
       {/* Suspense allows us to add a loader while the model is loading */}
       <Suspense fallback={<CanvasLoader />}>
