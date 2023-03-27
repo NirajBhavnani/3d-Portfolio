@@ -14,14 +14,14 @@ import {
   java,
   sql,
   git,
+  threejs,
   kjsce,
   book,
   hope,
   mstar,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+  chatSpace,
+  fundoo,
+  pollen,
 } from "../assets";
 
 export const navLinks = [
@@ -193,67 +193,71 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "ChatSpace",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Built and deployed a live chatroom web application that also uses an authentication system.",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
+        name: "vueJs",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
+        name: "firebase",
+        color: "orange-text-gradient",
       },
       {
         name: "css",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: chatSpace,
+    source_code_link: "https://github.com/NirajBhavnani/ChatSpace",
+  },
+  {
+    name: "Fundoo",
+    description:
+      "Fundoo is a rather simplistic note taking application that allows notes to be organized in folders (labels) and archived.",
+    tags: [
+      {
+        name: "mongodb",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "expressJs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "vueJs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "nodeJs",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: fundoo,
+    source_code_link: "https://github.com/NirajBhavnani/Fundoo",
+  },
+  {
+    name: "Pollen",
+    description:
+      "Designed a web-based application that predicts the pollen count of a region and performs future estimation of the pollen count and categorizes pollen taxa using image classification analysis.",
+    tags: [
+      {
+        name: "django",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "machineLearning",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "jQuery",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: pollen,
+    source_code_link: "https://github.com/NirajBhavnani/Pollen",
   },
 ];
 

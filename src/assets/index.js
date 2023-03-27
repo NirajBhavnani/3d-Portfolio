@@ -25,9 +25,9 @@ import book from "./company/open-book.png";
 import hope from "./company/hope.jpg";
 import mstar from "./company/Mstar.jpg";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import chatSpace from "./ChatSpace.jpg";
+import fundoo from "./Fundoo.jpg";
+import pollen from "./Pollen.jpeg";
 
 export {
   logo,
@@ -54,7 +54,7 @@ export {
   book,
   hope,
   mstar,
-  carrent,
-  jobit,
-  tripguide,
+  chatSpace,
+  fundoo,
+  pollen,
 };
