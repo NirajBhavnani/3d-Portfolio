@@ -28,6 +28,10 @@ import chatSpace from "./ChatSpace.jpg";
 import fundoo from "./Fundoo.jpg";
 import pollen from "./Pollen.jpeg";
 
+import trophy from "./trophy.png";
+import spot from "./spot.jpg";
+import sotq from "./sotq.jpg";
+
 export {
   logo,
   backend,
@@ -55,4 +59,7 @@ export {
   chatSpace,
   fundoo,
   pollen,
+  trophy,
+  spot,
+  sotq,
 };
