@@ -17,7 +17,6 @@ import {
   threejs,
   kjsce,
   book,
-  hope,
   mstar,
   chatSpace,
   fundoo,
@@ -133,19 +132,6 @@ const experiences = [
       "Analyzed the requirements to create a high-quality app for needy students and Babasai Mission's online library admin staff.",
       "Developed a cross-platform mobile application using Flutter and other related technologies.",
       "Updating the app as per the requirement of the staff and ensuring optimal performance.",
-    ],
-  },
-  {
-    title: "Communication Intern",
-    company_name: "Hope of People Everywhere",
-    icon: hope,
-    iconBg: "#383E56",
-    date: "Jul 2022 - Sep 2022",
-    points: [
-      "Drafted and organized social media content for @mumbai.hope's Instagram page.",
-      "Created and curated engaging content.",
-      "Spread those media to the targeted audience.",
-      "General social media planning, research, reporting and coordination as assigned.",
     ],
   },
   {

@@ -22,7 +22,6 @@ import threejs from "./tech/threejs.svg";
 
 import kjsce from "./company/kjsce.jpg";
 import book from "./company/open-book.png";
-import hope from "./company/hope.jpg";
 import mstar from "./company/Mstar.jpg";
 
 import chatSpace from "./ChatSpace.jpg";
@@ -52,7 +51,6 @@ export {
   threejs,
   kjsce,
   book,
-  hope,
   mstar,
   chatSpace,
   fundoo,
