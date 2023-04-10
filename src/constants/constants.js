@@ -18,9 +18,9 @@ import {
   kjsce,
   book,
   mstar,
+  shippr,
   chatSpace,
   fundoo,
-  pollen,
   spot,
   sotq,
 } from "../assets";
@@ -173,9 +173,34 @@ const awards = [
 
 const projects = [
   {
+    name: "Shippr",
+    description:
+      "Developed and deployed a fully responsive Modern Full Stack E-commerce application with payments functionality.",
+    tags: [
+      {
+        name: "nextJs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "stripe",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "sanity",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "vercel",
+        color: "green-text-gradient",
+      },
+    ],
+    image: shippr,
+    source_code_link: "https://github.com/NirajBhavnani/Shippr",
+  },
+  {
     name: "ChatSpace",
     description:
-      "Built and deployed a live chatroom web application that also uses an authentication system.",
+      "Built and deployed a live chatroom web application using an authentication system.",
     tags: [
       {
         name: "vueJs",
@@ -196,7 +221,7 @@ const projects = [
   {
     name: "Fundoo",
     description:
-      "Fundoo is a rather simplistic note taking application that allows notes to be organized in folders (labels) and archived.",
+      "A simplistic note-taking application that allows notes to be organized in folders (labels) and archived.",
     tags: [
       {
         name: "mongodb",
@@ -217,27 +242,6 @@ const projects = [
     ],
     image: fundoo,
     source_code_link: "https://github.com/NirajBhavnani/Fundoo",
-  },
-  {
-    name: "Pollen",
-    description:
-      "Designed a web-based application that predicts the pollen count of a region and performs future estimation of the pollen count and categorizes pollen taxa using image classification analysis.",
-    tags: [
-      {
-        name: "django",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "machineLearning",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "jQuery",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: pollen,
-    source_code_link: "https://github.com/NirajBhavnani/Pollen",
   },
 ];
 
