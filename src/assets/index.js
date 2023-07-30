@@ -18,6 +18,7 @@ import flutter from "./tech/flutter.png";
 import python from "./tech/python.png";
 import java from "./tech/Java.png";
 import sql from "./tech/sql.png";
+import nextjs from "./tech/nextjs.png";
 import threejs from "./tech/threejs.svg";
 
 import kjsce from "./company/kjsce.jpg";
@@ -30,6 +31,7 @@ import fundoo from "./Fundoo.jpg";
 
 import trophy from "./trophy.png";
 import spot from "./spot.jpg";
+import spot2 from "./spot2.jpg";
 import sotq from "./sotq.jpg";
 
 export {
@@ -52,6 +54,7 @@ export {
   python,
   java,
   sql,
+  nextjs,
   threejs,
   kjsce,
   book,
@@ -61,5 +64,6 @@ export {
   fundoo,
   trophy,
   spot,
+  spot2,
   sotq,
 };

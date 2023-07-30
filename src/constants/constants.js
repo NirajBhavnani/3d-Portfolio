@@ -14,6 +14,7 @@ import {
   java,
   sql,
   git,
+  nextjs,
   threejs,
   kjsce,
   book,
@@ -22,6 +23,7 @@ import {
   chatSpace,
   fundoo,
   spot,
+  spot2,
   sotq,
 } from "../assets";
 
@@ -105,6 +107,10 @@ const technologies = [
     icon: git,
   },
   {
+    name: "Next JS",
+    icon: nextjs,
+  },
+  {
     name: "Three JS",
     icon: threejs,
   },
@@ -137,29 +143,30 @@ const experiences = [
     ],
   },
   {
-    title: "Associate Software Engineer",
+    title: "Software Engineer",
     company_name: "Morningstar",
     icon: mstar,
     iconBg: "#E6DEDD",
     date: "Aug 2021 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Building and maintaining Web APIs using C#.NET and similar technologies.",
-      "Implementing responsive design and ensuring cross-browser compatibility, accessibility, and XSS attack prevention.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Promoted from Associate Software Engineer to Software Engineer in July 2023.",
+      "Developing and maintaining web applications with React.js and other related technologies.",
+      "Building and maintaining Web APIs using C#.NET for scalable backend systems.",
+      "Implementing responsive design, ensuring cross-browser compatibility, accessibility, and XSS attack prevention.",
+      "Collaborating with cross-functional teams to create high-quality products.",
+      "Actively participating in code reviews, providing valuable feedback to enhance code quality",
     ],
   },
 ];
 
 const awards = [
   {
-    award: sotq,
-    name: "Star of the Quarter Award",
+    award: spot2,
+    name: "SPOT Award",
     company: "Morningstar",
     image: mstar,
-    height: "1/2",
-    date: "Jan 2023",
+    height: "full",
+    date: "Jun 2023",
   },
   {
     award: spot,
@@ -169,6 +176,14 @@ const awards = [
     height: "full",
     date: "Feb 2022",
   },
+  {
+    award: sotq,
+    name: "Star of the Quarter Award",
+    company: "Morningstar",
+    image: mstar,
+    height: "1/2",
+    date: "Jan 2023",
+  }
 ];
 
 const projects = [

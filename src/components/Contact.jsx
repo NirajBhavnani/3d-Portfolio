@@ -71,6 +71,14 @@ const Contact = () => {
       >
         <p className={`${styles.sectionSubText}`}>Get in touch</p>
         <h2 className={`${styles.sectionHeadText}`}>Contact.</h2>
+        <a
+          href="https://www.linkedin.com/in/niraj-bhavnani/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-white font-medium"
+        >
+          <span className="blue-text-gradient">&gt;</span> LinkedIn
+        </a>
 
         <form
           ref={formRef}
