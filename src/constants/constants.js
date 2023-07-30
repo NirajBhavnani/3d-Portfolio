@@ -14,14 +14,16 @@ import {
   java,
   sql,
   git,
+  nextjs,
   threejs,
   kjsce,
   book,
   mstar,
+  shippr,
   chatSpace,
   fundoo,
-  pollen,
   spot,
+  spot2,
   sotq,
 } from "../assets";
 
@@ -105,6 +107,10 @@ const technologies = [
     icon: git,
   },
   {
+    name: "Next JS",
+    icon: nextjs,
+  },
+  {
     name: "Three JS",
     icon: threejs,
   },
@@ -137,29 +143,30 @@ const experiences = [
     ],
   },
   {
-    title: "Associate Software Engineer",
+    title: "Software Engineer",
     company_name: "Morningstar",
     icon: mstar,
     iconBg: "#E6DEDD",
     date: "Aug 2021 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Building and maintaining Web APIs using C#.NET and similar technologies.",
-      "Implementing responsive design and ensuring cross-browser compatibility, accessibility, and XSS attack prevention.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Promoted from Associate Software Engineer to Software Engineer in July 2023.",
+      "Developing and maintaining web applications with React.js and other related technologies.",
+      "Building and maintaining Web APIs using C#.NET for scalable backend systems.",
+      "Implementing responsive design, ensuring cross-browser compatibility, accessibility, and XSS attack prevention.",
+      "Collaborating with cross-functional teams to create high-quality products.",
+      "Actively participating in code reviews, providing valuable feedback to enhance code quality",
     ],
   },
 ];
 
 const awards = [
   {
-    award: sotq,
-    name: "Star of the Quarter Award",
+    award: spot2,
+    name: "SPOT Award",
     company: "Morningstar",
     image: mstar,
-    height: "1/2",
-    date: "Jan 2023",
+    height: "full",
+    date: "Jun 2023",
   },
   {
     award: spot,
@@ -169,13 +176,46 @@ const awards = [
     height: "full",
     date: "Feb 2022",
   },
+  {
+    award: sotq,
+    name: "Star of the Quarter Award",
+    company: "Morningstar",
+    image: mstar,
+    height: "1/2",
+    date: "Jan 2023",
+  }
 ];
 
 const projects = [
   {
+    name: "Shippr",
+    description:
+      "Developed and deployed a fully responsive Modern Full Stack E-commerce application with payments functionality.",
+    tags: [
+      {
+        name: "nextJs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "stripe",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "sanity",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "vercel",
+        color: "green-text-gradient",
+      },
+    ],
+    image: shippr,
+    source_code_link: "https://github.com/NirajBhavnani/Shippr",
+  },
+  {
     name: "ChatSpace",
     description:
-      "Built and deployed a live chatroom web application that also uses an authentication system.",
+      "Built and deployed a live chatroom web application using an authentication system.",
     tags: [
       {
         name: "vueJs",
@@ -196,7 +236,7 @@ const projects = [
   {
     name: "Fundoo",
     description:
-      "Fundoo is a rather simplistic note taking application that allows notes to be organized in folders (labels) and archived.",
+      "A simplistic note-taking application that allows notes to be organized in folders (labels) and archived.",
     tags: [
       {
         name: "mongodb",
@@ -217,27 +257,6 @@ const projects = [
     ],
     image: fundoo,
     source_code_link: "https://github.com/NirajBhavnani/Fundoo",
-  },
-  {
-    name: "Pollen",
-    description:
-      "Designed a web-based application that predicts the pollen count of a region and performs future estimation of the pollen count and categorizes pollen taxa using image classification analysis.",
-    tags: [
-      {
-        name: "django",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "machineLearning",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "jQuery",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: pollen,
-    source_code_link: "https://github.com/NirajBhavnani/Pollen",
   },
 ];
 

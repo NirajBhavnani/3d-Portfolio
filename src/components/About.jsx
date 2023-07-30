@@ -38,15 +38,21 @@ const About = () => {
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-secondary text-[17px] max-w-4xl leading-[30px]"
       >
-        First and foremost, I love writing code. Since writing my first "Hello
-        world" program in C, I've been obsessed with programming and thus
-        leading to many Hello worlds. I am a skilled software developer with
-        experience in JavaScript and C#, and expertise in frameworks like
-        React.js, Vue.js and .NET. Software development has always been my
-        passion. This passion always acted as a catalyst for me to solve
-        problems and reflect on my project ideas.
+        Passionate Software Engineer with a love for coding and problem-solving.
+        From my first 'Hello world' program in C, I've been captivated by
+        programming, leading to a multitude of exciting projects. As a Computer
+        Engineer, my journey has encompassed assignments, online courses, and
+        impactful internship projects.<br/> My skillset includes expertise in
+        JavaScript, React.js, Vue.js, C#.NET, Python, Java, Flutter, Django,
+        SQL, and Firebase. With a deep-rooted passion for software development,
+        I thrive on tackling challenges and bringing innovative project ideas to
+        life.<br/> Beyond coding, I enjoy engaging in diverse interests such as
+        Chess, Anime, Cricket, Football, Guitar, Series, Photography, and Video
+        Editing.<br/> I'm driven by a desire for continuous growth and always eager
+        to explore new technologies and frameworks. Let's connect and
+        collaborate on meaningful projects together!
       </motion.p>
 
       {/* Cards */}
