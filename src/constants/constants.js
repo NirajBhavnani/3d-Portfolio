@@ -19,9 +19,9 @@ import {
   kjsce,
   book,
   mstar,
+  threader,
   shippr,
   chatSpace,
-  fundoo,
   spot,
   spot2,
   sotq,
@@ -44,7 +44,7 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Frontend Developer",
     icon: web,
   },
   {
@@ -188,6 +188,35 @@ const awards = [
 
 const projects = [
   {
+    name: "Threader",
+    description:
+      "Pioneered Threader, an innovative social media platform where users can post and interact with short messages.",
+    tags: [
+      {
+        name: "nextJs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "tailwindCss",
+        color: "bg-gradient-to-r from-lime-400 to-lime-500 bg-clip-text text-transparent",
+      },
+      {
+        name: "clerk",
+        color: "bg-gradient-to-r from-violet-500 to-purple-500 bg-clip-text text-transparent",
+      },
+      {
+        name: "vercel",
+        color: "bg-gradient-to-r from-amber-200 to-yellow-500 bg-clip-text text-transparent",
+      },
+    ],
+    image: threader,
+    source_code_link: "https://github.com/NirajBhavnani/Threader",
+  },
+  {
     name: "Shippr",
     description:
       "Developed and deployed a fully responsive Modern Full Stack E-commerce application with payments functionality.",
@@ -232,32 +261,7 @@ const projects = [
     ],
     image: chatSpace,
     source_code_link: "https://github.com/NirajBhavnani/ChatSpace",
-  },
-  {
-    name: "Fundoo",
-    description:
-      "A simplistic note-taking application that allows notes to be organized in folders (labels) and archived.",
-    tags: [
-      {
-        name: "mongodb",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "expressJs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "vueJs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "nodeJs",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: fundoo,
-    source_code_link: "https://github.com/NirajBhavnani/Fundoo",
-  },
+  }
 ];
 
 export { services, technologies, experiences, awards, projects };

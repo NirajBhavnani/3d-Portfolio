@@ -40,19 +40,22 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-4xl leading-[30px]"
       >
-        Passionate Software Engineer with a love for coding and problem-solving.
-        From my first 'Hello world' program in C, I've been captivated by
-        programming, leading to a multitude of exciting projects. As a Computer
-        Engineer, my journey has encompassed assignments, online courses, and
-        impactful internship projects.<br/> My skillset includes expertise in
-        JavaScript, React.js, Vue.js, C#.NET, Python, Java, Flutter, Django,
-        SQL, and Firebase. With a deep-rooted passion for software development,
-        I thrive on tackling challenges and bringing innovative project ideas to
-        life.<br/> Beyond coding, I enjoy engaging in diverse interests such as
-        Chess, Anime, Cricket, Football, Guitar, Series, Photography, and Video
-        Editing.<br/> I'm driven by a desire for continuous growth and always eager
-        to explore new technologies and frameworks. Let's connect and
-        collaborate on meaningful projects together!
+        Passionate Software Engineer captivated by coding since my first 'Hello
+        world' in C. As a Computer Engineer, my journey has encompassed
+        assignments, online courses, and impactful internship projects. <br />
+        Proficient in JavaScript, React.js, Vue.js, C#.NET, Next.js, Python,
+        Java, Flutter, SQL, and Firebase. With a deep-rooted passion for
+        software development, I thrive on tackling challenges and bringing
+        innovative project ideas to life. <br />
+        <br />
+        <span className="bg-gradient-to-r from-purple-500 to-purple-900 text-white">
+          Developed this website using Three.js, React.js, and Tailwind CSS.
+        </span>{" "}
+        Beyond coding, I enjoy Chess, Anime, Cricket, Football, Guitar, Series,
+        Photography, and Video Editing. <br />
+        I'm driven by a desire for continuous growth and always eager to explore
+        new technologies and frameworks. Let's connect and collaborate on
+        meaningful projects together!
       </motion.p>
 
       {/* Cards */}
