@@ -75,7 +75,7 @@ const Contact = () => {
           href="https://www.linkedin.com/in/niraj-bhavnani/"
           target="_blank"
           rel="noopener noreferrer"
-          class="text-white font-medium"
+          className="text-white font-medium"
         >
           <span className="blue-text-gradient">&gt;</span> LinkedIn
         </a>

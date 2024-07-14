@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import { awards } from "../constants/constants";
+import { awards } from "../constants";
 import { trophy } from "../assets";
 
 const AwardCard = ({ index, award, name, company, image, height, date }) => {

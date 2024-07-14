@@ -19,9 +19,11 @@ import {
   kjsce,
   book,
   mstar,
+  dash,
   threader,
   shippr,
   chatSpace,
+  fundoo,
   spot,
   spot2,
   sotq,
@@ -52,11 +54,11 @@ const services = [
     icon: backend,
   },
   {
-    title: "Flutter Developer",
+    title: "Technology Enthusiast",
     icon: mobile,
   },
   {
-    title: "Sql Developer",
+    title: "Problem Solver",
     icon: creator,
   },
 ];
@@ -79,8 +81,8 @@ const technologies = [
     icon: csharp,
   },
   {
-    name: "Flutter",
-    icon: flutter,
+    name: "Next JS",
+    icon: nextjs,
   },
   {
     name: "Python",
@@ -89,6 +91,10 @@ const technologies = [
   {
     name: "Java",
     icon: java,
+  },
+  {
+    name: "Flutter",
+    icon: flutter,
   },
   {
     name: "SQL",
@@ -105,10 +111,6 @@ const technologies = [
   {
     name: "git",
     icon: git,
-  },
-  {
-    name: "Next JS",
-    icon: nextjs,
   },
   {
     name: "Three JS",
@@ -188,6 +190,35 @@ const awards = [
 
 const projects = [
   {
+    name: "Dash",
+    description:
+      "Developed Dash, a secure video conferencing platform featuring advanced authentication, real-time interactions, screen sharing, and comprehensive meeting controls.",
+    tags: [
+      {
+        name: "nextJs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "stream",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "tailwindCss",
+        color: "bg-gradient-to-r from-lime-400 to-lime-500 bg-clip-text text-transparent",
+      },
+      {
+        name: "clerk",
+        color: "bg-gradient-to-r from-violet-500 to-purple-500 bg-clip-text text-transparent",
+      },
+      {
+        name: "vercel",
+        color: "bg-gradient-to-r from-amber-200 to-yellow-500 bg-clip-text text-transparent",
+      },
+    ],
+    image: dash,
+    source_code_link: "https://github.com/NirajBhavnani/Dash",
+  },
+  {
     name: "Threader",
     description:
       "Pioneered Threader, an innovative social media platform where users can post and interact with short messages.",
@@ -261,6 +292,31 @@ const projects = [
     ],
     image: chatSpace,
     source_code_link: "https://github.com/NirajBhavnani/ChatSpace",
+  },
+  {
+    name: "Fundoo",
+    description:
+      "A simplistic note-taking application that allows notes to be organized in folders (labels) and archived.",
+    tags: [
+      {
+        name: "mongodb",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "expressJs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "vueJs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "nodeJs",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: fundoo,
+    source_code_link: "https://github.com/NirajBhavnani/Fundoo",
   }
 ];
 

@@ -25,9 +25,11 @@ import kjsce from "./company/kjsce.jpg";
 import book from "./company/open-book.png";
 import mstar from "./company/Mstar.jpg";
 
+import dash from "./Dash.png";
 import threader from "./Threader.jpg";
 import shippr from "./Shippr.jpg";
 import chatSpace from "./ChatSpace.jpg";
+import fundoo from "./Fundoo.jpg";
 
 import trophy from "./trophy.png";
 import spot from "./spot.jpg";
@@ -59,9 +61,11 @@ export {
   kjsce,
   book,
   mstar,
+  dash,
   threader,
   shippr,
   chatSpace,
+  fundoo,
   trophy,
   spot,
   spot2,

@@ -2,7 +2,7 @@ import React from "react";
 // Ball component
 import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
-import { technologies } from "../constants/constants";
+import { technologies } from "../constants";
 
 const Tech = () => {
   return (
