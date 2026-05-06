@@ -17,8 +17,9 @@ import {
   nextjs,
   threejs,
   kjsce,
-  book,
+  bm,
   mstar,
+  niq,
   dash,
   threader,
   shippr,
@@ -120,6 +121,47 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Software Engineer",
+    company_name: "NielsenIQ",
+    icon: niq,
+    iconBg: "#E6DEDD",
+    date: "Jul 2025 - Present",
+    points: [
+      "Spearheading development and maintenance of ClaimManager, a core product enabling insurance companies and third-party adjusters to quickly determine replacement and present values for 10M+ items dating back to 1990.",
+      "Building and optimizing features for direct and manual claim valuation requests, ensuring fast, accurate responses, and reducing manual processing overhead.",
+      "Collaborating with back-office systems such as SpexAdmin to maintain interoperability and streamline workflows for claims adjusters, thereby improving operational efficiency.",
+      "Handling deployments, troubleshooting, and performance tuning in a lean, Kanban-driven environment to achieve SLA targets, with 90% of valuation requests completed within two minutes.",
+      "Actively participating in code reviews, providing valuable feedback to enhance code quality",
+    ],
+  },
+  {
+    title: "Software Engineer",
+    company_name: "Morningstar",
+    icon: mstar,
+    iconBg: "#E6DEDD",
+    date: "Aug 2021 - Jul 2025",
+    points: [
+      "Promoted from Associate Software Engineer to Software Engineer in July 2023.",
+      "Driven the development of advanced web applications using Vue.js and related technologies.",
+      "Created and maintained robust Web APIs with .NET for scalable backend systems supporting frontend applications.",
+      "Proactively researched industry trends, incorporating innovative solutions, and enhancing technical skills.",
+      "Demonstrated a strong commitment to code quality, performance, and security standards.",
+      "Fostered a collaborative work environment through active participation in discussions and brainstorming sessions.",
+    ],
+  },
+  {
+    title: "Full Stack Developer (Intern)",
+    company_name: "Babasai Mission",
+    icon: bm,
+    iconBg: "#383E56",
+    date: "Mar 2021 - Jun 2021",
+    points: [
+      "Analyzed the requirements to create a high-quality app for needy students and Babasai Mission's online library admin staff.",
+      "Developed a cross-platform mobile application using Flutter and other related technologies.",
+      "Updating the app as per the requirement of the staff and ensuring optimal performance.",
+    ],
+  },
+  {
     title: "Flutter Developer (Intern)",
     company_name:
       "K. J. Somaiya Institute Of Engineering and Information Technology",
@@ -130,33 +172,6 @@ const experiences = [
       "Simplified the process of Event Management in the college.",
       "Implemented an application for the college staff and coordinators.",
       "Created a cross-platform application using Flutter and Firebase.",
-    ],
-  },
-  {
-    title: "Full Stack Developer (Intern)",
-    company_name: "Babasai Mission",
-    icon: book,
-    iconBg: "#E6DEDD",
-    date: "Mar 2021 - Jun 2021",
-    points: [
-      "Analyzed the requirements to create a high-quality app for needy students and Babasai Mission's online library admin staff.",
-      "Developed a cross-platform mobile application using Flutter and other related technologies.",
-      "Updating the app as per the requirement of the staff and ensuring optimal performance.",
-    ],
-  },
-  {
-    title: "Software Engineer",
-    company_name: "Morningstar",
-    icon: mstar,
-    iconBg: "#E6DEDD",
-    date: "Aug 2021 - Present",
-    points: [
-      "Promoted from Associate Software Engineer to Software Engineer in July 2023.",
-      "Developing and maintaining web applications with React.js and other related technologies.",
-      "Building and maintaining Web APIs using C#.NET for scalable backend systems.",
-      "Implementing responsive design, ensuring cross-browser compatibility, accessibility, and XSS attack prevention.",
-      "Collaborating with cross-functional teams to create high-quality products.",
-      "Actively participating in code reviews, providing valuable feedback to enhance code quality",
     ],
   },
 ];

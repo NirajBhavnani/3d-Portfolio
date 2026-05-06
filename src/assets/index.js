@@ -22,8 +22,9 @@ import nextjs from "./tech/nextjs.png";
 import threejs from "./tech/threejs.svg";
 
 import kjsce from "./company/kjsce.jpg";
-import book from "./company/open-book.png";
+import bm from "./company/bm.png";
 import mstar from "./company/Mstar.jpg";
+import niq from "./company/niq.jpeg";
 
 import dash from "./Dash.png";
 import threader from "./Threader.jpg";
@@ -59,8 +60,9 @@ export {
   nextjs,
   threejs,
   kjsce,
-  book,
+  bm,
   mstar,
+  niq,
   dash,
   threader,
   shippr,
