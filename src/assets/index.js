@@ -7,9 +7,7 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
-import css from "./tech/css.png";
 import git from "./tech/git.png";
-import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import reactjs from "./tech/reactjs.png";
 import vuejs from "./tech/vue.png";
@@ -18,8 +16,10 @@ import flutter from "./tech/flutter.png";
 import python from "./tech/python.png";
 import java from "./tech/Java.png";
 import sql from "./tech/sql.png";
+import mongodb from "./tech/mongodb.png";
+import docker from "./tech/docker.png";
 import nextjs from "./tech/nextjs.png";
-import threejs from "./tech/threejs.svg";
+import threejs from "./tech/threejs.png";
 
 import kjsce from "./company/kjsce.jpg";
 import bm from "./company/bm.png";
@@ -46,9 +46,7 @@ export {
   github,
   menu,
   close,
-  css,
   git,
-  html,
   javascript,
   reactjs,
   vuejs,
@@ -57,6 +55,8 @@ export {
   python,
   java,
   sql,
+  mongodb,
+  docker,
   nextjs,
   threejs,
   kjsce,

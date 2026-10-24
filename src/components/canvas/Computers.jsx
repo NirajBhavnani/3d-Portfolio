@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber"; //canvas allows us to place something on it
 
 // Below are the helpers which will be used to draw on the canvas

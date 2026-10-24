@@ -4,8 +4,6 @@ import {
   creator,
   web,
   javascript,
-  html,
-  css,
   reactjs,
   vuejs,
   csharp,
@@ -13,6 +11,8 @@ import {
   python,
   java,
   sql,
+  mongodb,
+  docker,
   git,
   nextjs,
   threejs,
@@ -55,7 +55,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Technology Enthusiast",
+    title: "AI Enthusiast",
     icon: mobile,
   },
   {
@@ -86,28 +86,24 @@ const technologies = [
     icon: nextjs,
   },
   {
-    name: "Python",
-    icon: python,
-  },
-  {
     name: "Java",
     icon: java,
   },
   {
-    name: "Flutter",
-    icon: flutter,
+    name: "Python",
+    icon: python,
   },
   {
     name: "SQL",
     icon: sql,
   },
   {
-    name: "HTML 5",
-    icon: html,
+    name: "MongoDB",
+    icon: mongodb,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "Docker",
+    icon: docker,
   },
   {
     name: "git",
@@ -116,6 +112,10 @@ const technologies = [
   {
     name: "Three JS",
     icon: threejs,
+  },
+  {
+    name: "Flutter",
+    icon: flutter,
   },
 ];
 
