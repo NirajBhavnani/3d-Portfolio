@@ -2,12 +2,12 @@ import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber"; //canvas allows us to place something on it
 
 // Below are the helpers which will be used to draw on the canvas
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei"; //useGLTF allows us to import 3D models
+import { OrbitControls, useGLTF } from "@react-three/drei"; //useGLTF allows us to import 3D models
 
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("./desktop_pc/scene.gltf");
+  const computer = useGLTF("/desktop_pc/scene.gltf");
 
   return (
     // For creating Three.js elements, usually mesh is used instead of div
@@ -20,8 +20,6 @@ const Computers = ({ isMobile }) => {
         angle={0.12}
         penumbra={1}
         intensity={1}
-        castShadow
-        shadow-mapSize={1024}
       />
       <primitive
         object={computer.scene}
@@ -60,9 +58,9 @@ const ComputersCanvas = () => {
   return (
     <Canvas
       frameloop="demand"
-      shadows
+      dpr={[1, 1.5]}
       camera={{ position: [16, 4, 5], fov: 30 }}
-      gl={{ preserveDrawingBuffer: true }}
+      gl={{ antialias: false }}
       className="cursor-ew-resize"
     >
       {/* Suspense allows us to add a loader while the model is loading */}
@@ -76,7 +74,6 @@ const ComputersCanvas = () => {
         />
         <Computers isMobile={isMobile} />
       </Suspense>
-      <Preload all />
     </Canvas>
   );
 };

@@ -95,4 +95,7 @@ const Projects = () => {
   );
 };
 
-export default SectionWrapper(Projects, "");
+export default SectionWrapper(Projects, "", {
+  once: true,
+  amount: "some",
+});
