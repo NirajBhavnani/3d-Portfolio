@@ -1,61 +1,106 @@
-import { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
-import {
-  Decal, //it will be used for texture
-  OrbitControls,
-  useTexture,
-} from "@react-three/drei";
-import CanvasLoader from "../Loader";
+import { useRef } from "react";
+import { useThree } from "@react-three/fiber";
+import { Decal, useTexture } from "@react-three/drei";
 
-const Ball = (props) => {
-  const [decal] = useTexture([props.imgUrl]);
+export const BallScene = ({ icon }) => {
+  const rotationRef = useRef();
+  const dragRef = useRef(null);
+  const invalidate = useThree((state) => state.invalidate);
+  const [decal] = useTexture([icon]);
+
+  const handlePointerDown = (event) => {
+    event.stopPropagation();
+    const pointerType = event.nativeEvent.pointerType;
+    const captured = pointerType !== "touch";
+    if (captured) {
+      event.target.setPointerCapture(event.pointerId);
+    }
+
+    dragRef.current = {
+      x: event.clientX,
+      y: event.clientY,
+      lastX: event.clientX,
+      lastY: event.clientY,
+      pointerType,
+      captured,
+      axis: pointerType === "touch" ? null : "both",
+    };
+  };
+
+  const handlePointerMove = (event) => {
+    const drag = dragRef.current;
+    if (!drag) return;
+
+    const totalX = event.clientX - drag.x;
+    const totalY = event.clientY - drag.y;
+
+    if (drag.pointerType === "touch" && drag.axis === null) {
+      if (Math.hypot(totalX, totalY) < 6) {
+        return;
+      }
+
+      drag.axis =
+        Math.abs(totalX) >= Math.abs(totalY) ? "horizontal" : "vertical";
+      if (drag.axis === "horizontal") {
+        event.target.setPointerCapture(event.pointerId);
+        drag.captured = true;
+      }
+    }
+
+    const deltaX = event.clientX - drag.lastX;
+    const deltaY = event.clientY - drag.lastY;
+    drag.lastX = event.clientX;
+    drag.lastY = event.clientY;
+    drag.x = event.clientX;
+    drag.y = event.clientY;
+
+    if (drag.axis === "vertical") return;
+
+    if (drag.axis === "both") {
+      rotationRef.current.rotation.x += deltaY * 0.01;
+    }
+    if (drag.axis === "both" || drag.axis === "horizontal") {
+      rotationRef.current.rotation.y += deltaX * 0.01;
+    }
+
+    invalidate();
+  };
+
+  const handlePointerUp = (event) => {
+    const drag = dragRef.current;
+    dragRef.current = null;
+    if (drag?.captured && event.target.hasPointerCapture(event.pointerId)) {
+      event.target.releasePointerCapture(event.pointerId);
+    }
+  };
 
   return (
     <>
-      <ambientLight intensity={0.15} />
-      <directionalLight position={[0, 0, 5]} intensity={0.35} />
-      <mesh scale={2.75}>
-        {/* A class for generating an icosahedron geometry. */}
-        <icosahedronGeometry args={[1, 1]} />
-
-        {/* Materials describe the appearance of objects. They are defined in a (mostly) 
-        renderer-independent way, so you don't have to rewrite materials if you decide to 
-        use a different renderer. */}
-        <meshStandardMaterial
-          color="#fff8eb"
-          polygonOffset
-          polygonOffsetFactor={-5}
-          flatShading
-        />
-
-        {/* Adding texture */}
-        <Decal
-          position={[0, 0, 1]}
-          map={decal}
-          rotation={[2 * Math.PI, 0, 6.25]} //for horizontally mirroring them
-          flatShading
-        />
-      </mesh>
+      <ambientLight intensity={0.2} />
+      <directionalLight position={[0, 0, 5]} intensity={0.45} />
+      <group ref={rotationRef}>
+        <mesh
+          scale={2.75}
+          onPointerDown={handlePointerDown}
+          onPointerMove={handlePointerMove}
+          onPointerUp={handlePointerUp}
+          onPointerCancel={handlePointerUp}
+        >
+          <icosahedronGeometry args={[1, 1]} />
+          <meshStandardMaterial
+            color="#fff8eb"
+            polygonOffset
+            polygonOffsetFactor={-5}
+            flatShading
+          />
+          <Decal
+            position={[0, 0, 1]}
+            map={decal}
+            rotation={[2 * Math.PI, 0, 6.25]}
+            flatShading
+          />
+        </mesh>
+      </group>
     </>
   );
 };
-
-const BallCanvas = ({ icon }) => {
-  return (
-    <Canvas
-      frameloop="demand"
-      dpr={[1, 1.25]}
-      gl={{ antialias: false, powerPreference: "low-power" }}
-      className="cursor-grab"
-    >
-      {/* Suspense allows us to add a loader while the model is loading */}
-      <Suspense fallback={<CanvasLoader />}>
-        {/* OrbitControls allows us to move the component left and right */}
-        <OrbitControls enableZoom={false} enablePan={false} />
-        <Ball imgUrl={icon} />
-      </Suspense>
-    </Canvas>
-  );
-};
-
-export default BallCanvas;
